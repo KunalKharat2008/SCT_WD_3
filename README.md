@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Pro
 
-A modern and interactive Tic-Tac-Toe game developed using HTML, CSS, and JavaScript. The application offers both multiplayer and AI gameplay with multiple difficulty levels, a responsive interface, live score tracking, and theme switching.
+A modern and interactive Tic-Tac-Toe game developed using **HTML5, CSS3, and JavaScript**. The application offers both multiplayer and AI gameplay with multiple difficulty levels, a responsive interface, live score tracking, and theme switching.
 
 ---
 
