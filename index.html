@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-btn">☀️ Light Mode</button>
+
+    <div class="container">
+        <div id="main-menu" class="screen active">
+            <h1>Tic-Tac-Toe Pro</h1>
+            
+            <div class="settings-group">
+                <h3>Game Mode</h3>
+                <div class="radio-group">
+                    <label><input type="radio" name="mode" value="pvp" checked> Player vs Player</label>
+                    <label><input type="radio" name="mode" value="pvc"> Player vs Computer</label>
+                </div>
+            </div>
+
+            <div id="ai-settings" class="settings-group hidden">
+                <h3>Difficulty</h3>
+                <div class="radio-group">
+                    <label><input type="radio" name="difficulty" value="easy" checked> Easy</label>
+                    <label><input type="radio" name="difficulty" value="medium"> Medium</label>
+                    <label><input type="radio" name="difficulty" value="hard"> Hard</label>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <h3>Starting Player</h3>
+                <div class="radio-group">
+                    <label><input type="radio" name="starting-player" value="X" checked> Player X</label>
+                    <label><input type="radio" name="starting-player" value="O"> Player O</label>
+                </div>
+            </div>
+
+            <button id="btn-start" class="primary-btn">Start Game</button>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div class="header">
+                <h2 id="status">Player X's Turn</h2>
+            </div>
+            
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <div class="scoreboard">
+                <div class="score-card">
+                    <span>Player X</span>
+                    <strong id="score-x">0</strong>
+                </div>
+                <div class="score-card draws">
+                    <span>Draws</span>
+                    <strong id="score-draws">0</strong>
+                </div>
+                <div class="score-card">
+                    <span>Player O</span>
+                    <strong id="score-o">0</strong>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-over-overlay" class="overlay hidden">
+            <div class="overlay-content">
+                <h1 id="overlay-msg">Player X Wins!</h1>
+                <div class="overlay-buttons">
+                    <button id="btn-play-again" class="primary-btn">Play Again</button>
+                    <button id="btn-main-menu" class="secondary-btn">Main Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
