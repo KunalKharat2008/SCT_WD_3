@@ -46,11 +46,10 @@ Computer uses the Minimax Algorithm to determine the optimal move, making it ext
 
 ## Project Structure
 
-|
-|--> index.html
-|--> style.css
-|--> script.js
-|--> README.md
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
 
 ---
